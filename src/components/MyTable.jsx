@@ -19,7 +19,11 @@ const MyTable = () => {
 	const [regions, setRegions] = useState(Object.entries(DATA))
 
 	const getValueCell = (yearsObj) => {
+
+		console.log(yearsObj)
+
 		let result = []
+
 		if (Object.entries(yearsObj)[0][0] === '2017') {
 			Object.values(Object.entries(yearsObj)[0][1]).forEach(item => {
 				result.push(item)
